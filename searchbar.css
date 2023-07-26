@@ -19,7 +19,7 @@ html {
     position: absolute  ;
     display: flex;
     justify-content: center;
-    right: 17%;
+    right: 20%;
     top: 22%;
     transition: 0.2s ease-in-out;
     display: none;
