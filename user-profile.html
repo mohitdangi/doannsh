@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doaansh | Mobile-cover</title>
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    
-    <!-- <link rel="stylesheet" href="mobileCover.css"> -->
-  
-    <link rel="stylesheet" href="mobilechanges.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting Page UI Design</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="searchbar.css">
 
-    <!-- <link rel="stylesheet" href="mobile-dropdown.css"> -->
-</head>
-
-<body>
-  
-    <!-- ==================== NAVBAR ================= -->
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="user-style.css" />
+  </head>
+  <body>
     <nav class="navbar1">
       <div class="navbar_container1">
           <div class="hamburger" id="nav-toggle">
@@ -72,7 +64,7 @@
       <div class="nav-container">
           <ul class="nav-ul">
               <li><a onclick="window.location.href='index.html';">Home</a></li>
-              <li><a href="">About Us</a></li>
+              <li><a onclick="window.location.href='about.html';">About Us</a></li>
               <li>
                   <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
                   <ul class="dropdown">
@@ -102,35 +94,47 @@
       </div>
 
   </nav>
+    <div class="container">
+      <div id="logo1">
+        <h1 class="logo1">PROFILE</h1>
+       
+      </div>
 
-    <div class="wrapper">
-        <div id="search-container">
-            <input type="search" name="" id="search-input" placeholder="Search product name here....">
-            <button id="search">Search</button>
-            <div id="buttons" class="dropdown">
-                <button class="button-value border" onclick="toggleDropdown()">filter <span class="arrow-down">&#9660;</span></button>
-                <div id="dropdown-content">
-                  <button class="button-value" onclick="toggleDropdown1();filterProduct('Iphone')">Iphone <span class="arrow-down">&#9660;</span></button>
-                  <div class="dropdown-content1 hide" id="iphone-dropdown">
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 7')">iPhone 7</button>
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 9')">iPhone 9</button>
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 10')">iPhone 10</button>
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 11')">iPhone 11</button>
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 12')">iPhone 12</button>
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 13')">iPhone 13</button>
-                    <button class="dropdown-option" onclick="filterProduct('Iphone 14')">iPhone 14</button>
-                  </div>
-                  <button class="button-value" onclick="filterProduct('Realme')">Realme</button>
-                  <button class="button-value" onclick="filterProduct('Samsung')">Samsung</button>
-                  <button class="button-value" onclick="filterProduct('Oneplus')">Oneplus</button>
-                  <button class="button-value" onclick="filterProduct('iphone476960')">iPhone 476960</button>
-                </div>
-              </div>
-              
-          </div>
-          
-        
-        <div id="products"></div>
+      <div class="leftbox">
+        <div class="nav-profile">
+          <a href="#" class="active hover-text-user">
+            <i class="fa fa-user"></i>
+          </a>
+          <a onclick="window.location.href='addCart.html';"  class="hover-text">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-tv"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-tasks"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-cog"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="rightbox">
+        <div class="profile">
+          <h1>Personal Info</h1>
+          <h2>Full Name</h2>
+          <p>Dangi ji <button class="btn">update</button></p>
+          <h2>Birthday</h2>
+          <p>January 5</p>
+          <h2>Gender</h2>
+          <p>Male</p>
+          <h2>Email</h2>
+          <p>1@gmail.com<button class="btn">update</button></p>
+          <h2>Password</h2>
+          <p>******** <button class="btn">Change</button></p>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer-container">
@@ -249,8 +253,5 @@
           </div>
       </div>
   </footer>
-    <script src="mobileCover.js"></script>
-    <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

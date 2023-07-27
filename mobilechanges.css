@@ -216,7 +216,7 @@
   border-radius: 20px;
   height: 320px;
   /* width: 65%; */
-  margin-left: 40px;
+  /* margin-left: 40px; */
   width: 230px;
   padding: 0.5rem 1rem;
   transition: 0.2s ease;
@@ -278,7 +278,7 @@ i {
 /* Add media query for mobile devices */
 @media only screen and (max-width: 1025px) {
   #search-container{
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     display: flex;
     justify-content: center;
     gap: 0;
@@ -304,6 +304,9 @@ i {
     margin-left: 0px;
     grid-template-columns: auto auto auto;
   }
+  .card{
+       margin-left: 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
   #products {
@@ -322,6 +325,7 @@ i {
   #search-container input {
     width: 90%; /* Take almost full width of the container on mobile */
     margin: 0 auto; /* Center the search bar horizontally on mobile */
+    order:1;
   }
 
   #search-container button {
@@ -329,11 +333,13 @@ i {
     width: 90%; /* Take almost full width of the container on mobile */
     margin-left: auto; /* Push the filter button to the right on mobile */
     margin-right: auto; /* Push the filter button to the right on mobile */
+    order: 2;
   }
 
   #buttons {
     margin-top: 1rem; /* Add margin between filter button and cards on mobile */
     text-align: center; /* Center the filter button horizontally on mobile */
+    order:3;
   }
   #buttons .button-value {
     width: 100%; /* Take almost full width of the container on mobile */
@@ -351,8 +357,8 @@ i {
   }
 
   .card {
-    width: 75%; /* Reduce the width of the card container on mobile */
-    height: 400px; /* Take almost full width of the container on mobile */
+    width: 70%; /* Reduce the width of the card container on mobile */
+    height: 380px; /* Take almost full width of the container on mobile */
     margin: 0 auto; /* Center the cards horizontally on mobile */
   }
 
