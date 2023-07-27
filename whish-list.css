@@ -59,7 +59,7 @@ align-items: center;
   
 
   .outer-div:hover{
-    filter: brightness(120%);
+    /* filter: brightness(120%); */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
@@ -185,7 +185,9 @@ border: none;
 outline: none;
 background-color: #b7e4c7;
   }
-
+  .hover:hover{
+    background-color: #87CBB9;
+  }
 
   /* ------------------ */
 
