@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <style>
+          /*style css*/
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.top {
+    position: fixed;
+    background-color: rgb(14, 12, 12);
+    bottom: 3%;
+    right: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.window-scroll{
+    opacity: 1;
+}
+
+.top img {
+    margin: 1rem 1.2rem;
+    transform: rotate(270deg);
+}
+
+.banner-div {
+    width: 100%;
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 25px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.banner-div a {
+    text-align: center;
+    color: white;
+}
+
+.banner-div p {
+    display: inline;
+}
+
+nav {
+    width: 500px;
+    /* background-color: red; */
+}
+
+
+
+.navbar1 {
+    /* background-color: rebeccapurple; */
+    background-color: rgb(235, 229, 229);
+    width: 100%;
+    color: #2d2d2d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+.navbar_container1 {    
+    /* background-color: #C4FCEF; */
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.hamburger {
+    font-size: 25px;
+    display: none;
+}
+
+.nav-2 {
+    margin-left: 5rem;
+}
+
+.nav-2 img {
+    width: 250px;
+    margin-top: 1.9rem;
+}
+
+.nav-3 {
+    display: flex;
+    gap: 19px;
+    margin-right: 5rem;
+}
+
+.login-btn{
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    padding: 4px 10px ;
+    border-radius: 5px;
+}
+
+.login-btn:hover{
+    background-color: #87CBB9;
+}
+
+
+/* ***************************** BANNER 2 ********************888 */
+.banner2 {
+    width: 100% ;
+    cursor: pointer;
+}
+
+.banner2 img{
+    width: 100%;
+}
+
+
+/* ***************************IMAGE GRIG ************************ */
+.shop-category {
+    /* margin-top: 2rem; */
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.shop-category h2 {
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    max-width: 100%;
+    height: 50%;
+    margin: 2rem auto;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-item.large {
+    grid-row: span 2;
+    grid-column: span 2;
+    position: relative;
+    display: inline-block;
+}
+
+.image-item img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: filter 0.3s ease;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with reduced opacity */
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+    /* Apply a slight zoom effect on hover */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+    filter: saturate(1.1);
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+/* ************************ GALLERY****************************** */
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery div img{
+    width: 100%;
+}
+
+@media screen and (max-width: 834px) {
+    .nav-1 {
+        font-size: 1.1rem;
+    }
+
+    .search sup {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    .nav-2{
+        /* background-color: yellow; */
+        margin-left: 1.5rem;
+    }
+
+    .hamburger {
+        margin-left: 15px;
+        display: block;
+    }
+
+    .nav-2 img{
+        width: 190px;
+    }
+
+    .nav-3{
+        margin-right: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .nav-2 {
+        /* margin-left: 15px; */
+        /* background-color: rebeccapurple; */
+    }
+
+    .nav-2 img {
+        /* margin-top: 2rem; */
+        width: 170px;
+    }
+
+    .nav-3 {
+        margin-right: 15px;
+    }
+
+    .top {
+        bottom: 3%;
+        right: 1%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 100;
+    }
+
+    .top img {
+        margin: 0.5rem 0.9rem;
+    }
+
+    /* .hamburger {
+        margin-left: 15px;
+        display: block;
+    } */
+
+    .nav-1 {
+        display: none;
+    }
+
+    .nav-3 {
+        gap: 5px;
+    }
+
+
+    .image-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .image-item.large {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+
+    .image-item.small {
+        grid-column: span 3;
+        /* grid-row: span 5; */
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hamburger{
+        margin-left: 4px;
+    }
+
+    .navbar_container1{
+        font-size: 1rem;
+    }
+
+    .nav-2{
+        margin-left: 0;
+        /* background-color: rebeccapurple; */
+    }
+
+}
+
+
+/*test css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon{
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul , li{
+    list-style: none;
+}
+
+.nav-ul{
+    /* background-color: whitesmoke; */
+    background-color: #87CBB9;
+    /* background-color: #C4FCEF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container ul li{
+    position: relative;
+}
+
+.nav-container ul li a{
+    display: block;
+    padding: 10px 25px;
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+}
+
+.nav-container ul li ul.dropdown li{
+    display: block;
+}
+
+.nav-container ul li ul.dropdown{
+    width: 100%;
+    background: #87CBB9;
+    position: absolute;
+    z-index: 200;
+    display: none;
+}
+
+.nav-container ul li a:hover{
+    background-color: white;
+}
+
+.nav-container ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .nav-container ul li a{
+        font-size: 15px;
+        padding: 15px 8px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .nav-ul{
+        /* background-color: whitesmoke; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-container ul li a{
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-ul{
+        flex-direction: column;
+        gap: 0;
+        justify-content: normal;
+        align-items: normal;
+        /* background-color: #87CBB9; */
+        background-color: whitesmoke;
+    }
+
+    .nav-container ul li ul.dropdown{
+        background: whitesmoke;
+    }
+
+    .nav-container{
+        position: absolute;
+        left: -100%;
+        /* left: 0; */
+        height: auto;
+        width: 100%;
+        background-color: whitesmoke;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .menu-bar-active{
+        left: 0;
+    }
+
+    .nav-container ul li a{
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .nav-container ul li a:hover{
+        background-color: whitesmoke;
+    }
+
+}
+
+/*seachbar css*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary: #e37676;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+/* input style */
+.input_container{
+    position: absolute  ;
+    display: flex;
+    justify-content: center;
+    right: 20%;
+    top: 22%;
+    transition: 0.2s ease-in-out;
+    display: none;
+}
+
+.open{
+    display: inline-flex;
+}
+
+.input_container input{
+    /* width: 100%; */
+    padding-left: 40px;
+    height: 35px;
+    border: 0.1px solid black;
+    border-radius: 30px;
+}
+
+.input_container input::placeholder{
+    color: black;
+}
+
+.search_icon{
+    position: relative;
+    left: 30px;
+    /* margin-left: -20px; */
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .input_container{
+        right: 22%;
+    }
+}
+
+
+@media screen and (max-width: 834px) {
+    .input_container{
+        right: 29%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input_container{
+        right: 0;
+        top: 73%;
+        left: 0;
+    }
+
+    .input_container input{
+        /* width: 180px; */
+        height: 24px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search_icon{
+        font-size: 0.8rem;
+    }
+
+    .input_container{
+        top: 72%;
+    }
+
+    .input_container input{
+        height: 25px;
+    }
+}
+
+
+
+
+/* footer css*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, li{
+    list-style: none    ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.footer-container{
+    /* background-color: whitesmoke; */
+    /* background-color: #b7e4c7; */
+    background-color: #C4FCEF;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* padding: 1rem 0; */
+}
+
+.footer-up-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-img-div{
+    width: 300px;
+    height: 120px;
+}
+
+.footer-img-div img{
+    width: 100%;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 50px;
+}
+
+.footer-icons li a{
+    font-size: 1.5rem;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-icons li a:hover{
+    /* color: #08817962; */
+    color: white;
+}
+
+.footer-down-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.footer-1{
+    width: 15%;
+}
+
+.footer-2{
+    width: 15%;
+}
+
+.footer-3{
+    width: 15%;
+}
+
+.footer-4{
+    width: 15%;
+}
+
+.footer-5{
+    width: 25%;
+}
+
+.widget-title{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+
+.menu li{
+    margin-top: 0.5rem;
+}
+
+.menu li a{
+    color: black;
+    font-size: 0.9rem;
+}
+
+.menu li a:hover{
+    border-bottom: 0.1px solid black;
+}
+
+.textwidget p{
+    font-size: 0.9rem;
+}
+
+.mobile{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.copyright-section{
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.copyright-section a{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu li{
+        margin-top: 0.9rem;
+    }
+
+    .textwidget p{
+        margin-top: 0.9rem;
+    }
+
+}
+
+
+@media screen and (max-width: 834px) {
+
+    .menu li{
+        margin-top: 1.2rem;
+    }
+    .textwidget p{
+        margin-top: 1.2rem;
+    }
+
+    .footer-container{
+        gap: 30px;
+    }
+
+    .footer-down-section{
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container{
+        gap: 20px;
+    }
+
+    .footer-img-div{
+        width: 300px;
+        height: 150px;
+    }
+
+    .footer-down-section{
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+
+    .footer-icons{
+        gap: 30px;
+    }
+    
+    .footer-1{
+        width: 80%;
+    }
+
+    .footer-2{
+        width: 80%;
+    }
+
+    .footer-3{
+        width: 80%;
+    }
+
+    .footer-4{
+        width: 80%;
+    }
+    
+    .footer-5{
+        width: 93%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .widget-title{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .menu li{
+        margin-top: 0.5rem;
+    }
+    .textwidget p{
+        margin-top: 0.5rem;
+    }
+
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      /* padding: 20px; */
+     
+    }
+
+    .accordion {
+
+        
+        width: 80%;
+      margin: 80px auto;
+
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      /* text-align: center; */
+ 
+      
+    }
+
+    .accordion-item {
+      cursor: pointer;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-bottom: 1px solid #b1b1b1;
+
+      gap: 20px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+
+    .accordion-item.active {
+      background-color: #ffffff;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+
+    .header_div{
+        background-color: #87CBB9;
+        color: white;
+        padding: 2px;
+        font-size: 20px;
+        /* border-top: 10px solid black; */
+    }
+
+
+    .accordion-item h2{
+        font-size: 18px;
+        padding-left: 10px;
+        font-weight: 400;
+       
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar1">
+    <div class="navbar_container1">
+        <div class="hamburger" id="nav-toggle">
+            <a href="">
+                <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
+            </a>
+        </div>
+        <div class="nav-2">
+            <img src="./assets/doansh png.png" alt="">
+        </div>
+        <div class="nav-3">
+            <div class="search">
+                <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
+                <div class="input_container">
+                    <div class="search_icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" id="searchInput" placeholder="Search Products....">
+                </div>
+            </div>
+
+
+            <div>
+                <a onclick="window.location.href='whishlist.html';"><i class="fas fa-heart"></i></a>
+            </div>
+
+
+            <div>
+                <a onclick="window.location.href='user-profile-new.html';"><i class="fas fa-user"></i></a>
+            </div>
+
+
+            <div>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div>
+                <a onclick="window.location.href='loginPage.html';" class="login-btn">Login</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="nav-container">
+        <ul class="nav-ul">
+            <li><a onclick="window.location.href='index.html';">Home</a></li>
+            <li><a onclick="window.location.href='about.html';">About Us</a></li>
+            <li>
+                <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
+                <ul class="dropdown">
+                    <li><a onclick="window.location.href='tshirtPage.html';">T-shirt</a></li>
+                    <li><a onclick="window.location.href='mobileCover.html';" style="font-size: 16px;">Mobile Cover</a></li>
+                </ul>
+            </li>
+            <li>
+            <a onclick="window.location.href='productPage.html';">Product</a>
+            </li>
+            <li><a href="">Sale</a></li>
+            <li><a href="">Top</a></li>
+            <li><a href="">Dresses</a></li>
+            <li>
+                <!-- <a onclick="window.location.href='productPage.html';">Product</a> -->
+                <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
+                <!-- <ul class="dropdown">
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">css</a></li>
+                    <li><a href="">JS</a></li>
+                </ul> -->
+            </li>
+            <li><a onclick="window.location.href='ourServices.html';">Services</a></li>
+            <li><a onclick="window.location.href='Trach-order.html';">Track Order</a></li>
+            <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
+        </ul>
+    </div>
+
+</nav>
+  <div class="container">
+    <div class="header_div">
+        <h1>Privacy Policy</h1>
+    </div>
+  
+    <div class="accordion">
+      <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+      
+       <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                    
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+      <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                    
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                    
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                    
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                    
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="accordion-item">
+        <h2>Information We Collect</h2>
+        <div class="accordion-content">
+
+            <ul>
+                <li> Lorem ipsum dolor sit amet.</li>
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+                <li> Lorem ipsum dolor sit amet.</li>
+                    
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+
+                
+                <li> Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+      </div>
+
+
+
+
+    
+      <!-- Add more accordion items as needed -->
+      
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+        <div class="footer-up-section">
+            <div class="footer-img-div">
+                <img src="./assets/doansh png.png" alt="">
+            </div>
+            <div>
+                <ul class="footer-icons">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-down-section">
+            <div class="footer-1">
+                <h5 class="widget-title">Company</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="">Who we are</a>
+                        </li>
+                        <li>
+                            <a onclick="window.location.href='privacy.html';">Privacy Policy </a>
+                        </li>
+                        <li>
+                            <a onclick="window.location.href='terms&condition.html';">Terms &amp;Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                </div>
+            </div>
+            <div class="footer-2">
+                <h5 class="widget-title">Service</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Track Order</a>
+                        </li>
+                        <li>
+                            <a href="#">Return Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Exchange Policy</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-3">
+                <h5 class="widget-title">Links</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">New Arrival</a>
+                        </li>
+                        <li>
+                            <a href="#">Size Guide</a>
+                        </li>
+                        <li>
+                            <a href="#">Latest News</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-4">
+                <h5 class="widget-title">Social Links</h5>
+                <div class="textwidget">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Whatsapp</a>
+                        </li>
+                        <li>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-5">
+                <h5 class="widget-title">About The Store</h5>
+                <div class="textwidget">
+                    <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
+                        men and women. Choose from a wide range of original quirky designs. Free delivery,
+                        Easy Return, Shop Now !!</p>
+                    <div class="mobile">
+                        <i class="fas fa-mobile"></i>
+                        Phone &amp Whatsapp: (+91) 90000 00000<br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <p>
+                &copy;2023 <a href="">Doaansh</a>
+                . All rights reserved | Powered by <a href="">ActConnect</a>
+            </p>
+        </div>
+    </div>
+</footer>
+  
+  <script>
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
