@@ -1029,7 +1029,8 @@ a{
 
 .image-container {
   /* background-color: green; */
-  padding: 1rem;
+  padding: 1rem 0px;
+    padding-left: 0.5em;
   border-radius: 20px;
   width: 90%;
   height: 60%;
@@ -1196,82 +1197,81 @@ h6 {
 <body>
   
     <!-- ==================== NAVBAR ================= -->
-
     <nav class="navbar1">
-      <div class="navbar_container1">
-          <div class="hamburger" id="nav-toggle">
-              <a href="">
-                  <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
-              </a>
-          </div>
-          <div class="nav-2">
-              <img src="./assets/doansh png.png" alt="">
-          </div>
-          <div class="nav-3">
-              <div class="search">
-                  <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
-                  <div class="input_container">
-                      <div class="search_icon">
-                          <i class="fas fa-search"></i>
-                      </div>
-                      <input type="text" id="searchInput" placeholder="Search Products....">
-                  </div>
-              </div>
+        <div class="navbar_container1">
+            <div class="hamburger" id="nav-toggle">
+                <a href="">
+                    <img src="./icon/bars-solid.svg" alt="" width="20px" height="20px">
+                </a>
+            </div>
+            <div class="nav-2">
+                <img src="./assets/doansh png.png" alt="">
+            </div>
+            <div class="nav-3">
+                <div class="search">
+                    <a href="" id="searchBtn"><i class="fas fa-search"></i></a>
+                    <div class="input_container">
+                        <div class="search_icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" id="searchInput" placeholder="Search Products....">
+                    </div>
+                </div>
 
 
-              <div>
-                  <a href=""><i class="fas fa-heart"></i></a>
-              </div>
+                <div>
+                    <a onclick="window.location.href='whishlist.html';"><i class="fas fa-heart"></i></a>
+                </div>
 
 
-              <div>
-                  <a href=""><i class="fas fa-user"></i></a>
-              </div>
+                <div>
+                    <a onclick="window.location.href='user-profile-new.html';"><i class="fas fa-user"></i></a>
+                </div>
 
 
-              <div>
-                  <a href=""><i class="fas fa-shopping-cart"></i></a>
-              </div>
+                <div>
+                    <a onclick="window.location.href='cart.html';"><i class="fas fa-shopping-cart"></i></a>
+                </div>
 
-              <div>
-                  <a onclick="window.location.href='loginPage.html';" class="login-btn">Login</a>
-              </div>
+                <div>
+                    <a onclick="window.location.href='loginPage.html';" class="login-btn">Login</a>
+                </div>
 
-          </div>
-      </div>
-      <div class="nav-container">
-          <ul class="nav-ul">
-              <li><a onclick="window.location.href='index.html';">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li>
-                  <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
-                  <ul class="dropdown">
-                      <li><a onclick="window.location.href='tshirtPage.html';">T-shirt</a></li>
-                      <li><a onclick="window.location.href='mobileCover.html';" style="font-size: 16px;">Mobile Cover</a></li>
-                  </ul>
-              </li>
-              <li>
-              <a onclick="window.location.href='productPage.html';">Product</a>
-              </li>
-              <li><a href="">Sale</a></li>
-              <li><a href="">Top</a></li>
-              <li><a href="">Dresses</a></li>
-              <li>
-                  <!-- <a onclick="window.location.href='productPage.html';">Product</a> -->
-                  <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
-                  <!-- <ul class="dropdown">
-                      <li><a href="">HTML</a></li>
-                      <li><a href="">css</a></li>
-                      <li><a href="">JS</a></li>
-                  </ul> -->
-              </li>
-              <li><a onclick="window.location.href='ourServices.html';">Services</a></li>
-              <li><a onclick="window.location.href='Trach-order.html';">Track Order</a></li>
-              <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
-          </ul>
-      </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-ul">
+                <li><a onclick="window.location.href='index.html';">Home</a></li>
+                <li><a onclick="window.location.href='about.html';">About Us</a></li>
+                <li>
+                    <a href="">Category<img src="./icon/arrow.png" alt="" width="6px" class="icon"></a>
+                    <ul class="dropdown">
+                        <li><a onclick="window.location.href='tshirtPage.html';">T-shirt</a></li>
+                        <li><a onclick="window.location.href='mobileCover.html';" style="font-size: 16px;">Mobile Cover</a></li>
+                    </ul>
+                </li>
+                <li>
+                <a onclick="window.location.href='productPage.html';">Product</a>
+                </li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">Top</a></li>
+                <li><a href="">Dresses</a></li>
+                <li>
+                    <!-- <a onclick="window.location.href='productPage.html';">Product</a> -->
+                    <!-- <img src="./icon/arrow.png" alt="" width="6px" class="icon"> -->
+                    <!-- <ul class="dropdown">
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">css</a></li>
+                        <li><a href="">JS</a></li>
+                    </ul> -->
+                </li>
+                <li><a onclick="window.location.href='ourServices.html';">Services</a></li>
+                <li><a onclick="window.location.href='Trach-order.html';">Track Order</a></li>
+                <li><a onclick="window.location.href='contactUs.html';">Contact Us</a></li>
+            </ul>
+        </div>
 
-  </nav>
+    </nav>
 
     <div class="wrapper">
         <div id="search-container">

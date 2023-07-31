@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy</title>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-nhaV3HhASw+Jz5WXdvg6TcILCgWkwzYpRdrkfdGjVf4eJ5eScgzzVnrHqqoRzDvA8et1pz4fRi2XJe7mHS3dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <style>
           /*style css*/
           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -669,7 +695,9 @@ a{
     font-weight: bolder;
 }
 
-
+.menu{
+    padding: 0px;
+}
 .menu li{
     margin-top: 0.5rem;
 }
@@ -788,84 +816,58 @@ a{
 
 }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
+    /*******faq*******/
 
-    .container {
-      width: 100%;
-      margin: 0 auto;
-      /* padding: 20px; */
-     
-    }
-
-    .accordion {
-
-        
-        width: 80%;
-      margin: 80px auto;
-
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      /* text-align: center; */
- 
-      
+    span {
+      font-weight: 700;
     }
 
     .accordion-item {
-      cursor: pointer;
-      background-color: #f9f9f9;
-      padding: 10px;
-      border-bottom: 1px solid #b1b1b1;
-
-      gap: 20px;
+      border: hidden !important;
     }
 
-    .accordion-content {
-      display: none;
-      padding: 10px;
+    .accordion-body {
+      box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
     }
 
-    .accordion-item.active {
-      background-color: #ffffff;
+    .accordion-button:not(.collapsed) {
+      color: black !important;
+      background-color: #fff !important;
+      box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
     }
 
-    .accordion-item.active .accordion-content {
-      display: block;
+    .accordion-button:link,
+    .accordion-button:visited,
+    .accordion-button:hover,
+    .accordion-button:active {
+      background-color: #fff !important;
+      color: black !important;
+      text-decoration: none !important;
+      border: hidden !important;
+      border-color: #fff !important;
+      box-shadow: 0px !important;
+    }
+    .accordion-button:focus {
+      z-index: 3;
+      border-color: #fff !important;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem #fff !important;
+    }
+    .over {
+      overflow: hidden;
+    }
+    .accordion-button {
+      background-color: #87cbb9;
+    }
+    .collapsed {
+      background-color: #87cbb9;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-
-    .header_div{
-        background-color: #87CBB9;
-        color: white;
-        padding: 2px;
-        font-size: 20px;
-        /* border-top: 10px solid black; */
-    }
-
-
-    .accordion-item h2{
-        font-size: 18px;
-        padding-left: 10px;
-        font-weight: 400;
-       
+    .accordion-button:not(.collapsed)::after{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
   </style>
-</head>
-<body>
+  <body>
     <nav class="navbar1">
         <div class="navbar_container1">
             <div class="hamburger" id="nav-toggle">
@@ -941,318 +943,229 @@ a{
         </div>
 
     </nav>
-  <div class="container">
-    <div class="header_div">
-        <h1>Privacy Policy</h1>
+    <div class="container over">
+      <div class="title">
+        <h1 class="pt-5 text-center">Frequently Asked Questions (FAQ's)</h1>
+      </div>
+      <div class="accordion-container p-5">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Question 1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+              Question 2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+              Question 3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  
-    <div class="accordion">
-      <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-      
-       <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                    
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-
-
-
-      <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                    
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-
-
-
-
-      <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                    
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-
-
-
-
-      <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                    
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-
-
-
-
-
-
-      <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                    
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="accordion-item">
-        <h2>Information We Collect</h2>
-        <div class="accordion-content">
-
-            <ul>
-                <li> Lorem ipsum dolor sit amet.</li>
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-                <li> Lorem ipsum dolor sit amet.</li>
-                    
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-
-                
-                <li> Lorem ipsum dolor sit amet.</li>
-            </ul>
-        </div>
-      </div>
-
-
-
 
     
-      <!-- Add more accordion items as needed -->
-      
-    </div>
-  </div>
-  
-  <footer>
-    <div class="footer-container">
-        <div class="footer-up-section">
-            <div class="footer-img-div">
-                <img src="./assets/doansh png.png" alt="">
-            </div>
-            <div>
-                <ul class="footer-icons">
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-down-section">
-            <div class="footer-1">
-                <h5 class="widget-title">Company</h5>
-                <div class="textwidget">
-                    <ul class="menu">
-                        <li>
-                            <a href="">Who we are</a>
-                        </li>
-                        <li>
-                            <a onclick="window.location.href='privacy.html';">Privacy Policy </a>
-                        </li>
-                        <li>
-                            <a onclick="window.location.href='terms&condition.html';">Terms &amp;Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-up-section">
+                <div class="footer-img-div">
+                    <img src="./assets/doansh png.png" alt="">
                 </div>
-            </div>
-            <div class="footer-2">
-                <h5 class="widget-title">Service</h5>
-                <div class="textwidget">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Track Order</a>
-                        </li>
-                        <li>
-                            <a href="#">Return Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Exchange Policy</a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
+                <div>
+                    <ul class="footer-icons">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-3">
-                <h5 class="widget-title">Links</h5>
-                <div class="textwidget">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">New Arrival</a>
-                        </li>
-                        <li>
-                            <a href="#">Size Guide</a>
-                        </li>
-                        <li>
-                            <a href="#">Latest News</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Sitemap</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-4">
-                <h5 class="widget-title">Social Links</h5>
-                <div class="textwidget">
-                    <ul class="menu">
-                        <li>
-                            <a href="#">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#">Whatsapp</a>
-                        </li>
-                        <li>
-                            <a href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-5">
-                <h5 class="widget-title">About The Store</h5>
-                <div class="textwidget">
-                    <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
-                        men and women. Choose from a wide range of original quirky designs. Free delivery,
-                        Easy Return, Shop Now !!</p>
-                    <div class="mobile">
-                        <i class="fas fa-mobile"></i>
-                        Phone &amp Whatsapp: (+91) 90000 00000<br>
+            <div class="footer-down-section">
+                <div class="footer-1">
+                    <h5 class="widget-title">Company</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="">Who we are</a>
+                            </li>
+                            <li>
+                                <a onclick="window.location.href='privacy.html';">Privacy Policy </a>
+                            </li>
+                            <li>
+                                <a onclick="window.location.href='terms&condition.html';">Terms &amp;Conditions</a>
+                            </li>
+                            <li>
+                                <a onclick="window.location.href='faq.html';">FAQ</a>
+                            </li>
                     </div>
-                    <br>
+                </div>
+                <div class="footer-2">
+                    <h5 class="widget-title">Service</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Return Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Exchange Policy</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-3">
+                    <h5 class="widget-title">Links</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">New Arrival</a>
+                            </li>
+                            <li>
+                                <a href="#">Size Guide</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-4">
+                    <h5 class="widget-title">Social Links</h5>
+                    <div class="textwidget">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Whatsapp</a>
+                            </li>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-5">
+                    <h5 class="widget-title">About The Store</h5>
+                    <div class="textwidget">
+                        <p>Doaansh is an online fashion store. Buy clothes and other accessories here online for
+                            men and women. Choose from a wide range of original quirky designs. Free delivery,
+                            Easy Return, Shop Now !!</p>
+                        <div class="mobile">
+                            <i class="fas fa-mobile"></i>
+                            Phone &amp Whatsapp: (+91) 90000 00000<br>
+                        </div>
+                        <br>
+                    </div>
                 </div>
             </div>
+            <div class="copyright-section">
+                <p>
+                    &copy;2023 <a href="">Doaansh</a>
+                    . All rights reserved | Powered by <a href="">ActConnect</a>
+                </p>
+            </div>
         </div>
-        <div class="copyright-section">
-            <p>
-                &copy;2023 <a href="">Doaansh</a>
-                . All rights reserved | Powered by <a href="">ActConnect</a>
-            </p>
-        </div>
-    </div>
-</footer>
-  
-  <script>
-    const accordionItems = document.querySelectorAll('.accordion-item');
-
-    accordionItems.forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('active');
-      });
-    });
-  </script>
-</body>
+    </footer>
+  </body>
 </html>
